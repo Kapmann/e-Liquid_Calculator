@@ -13,13 +13,18 @@
 
 .about_pos {
     position: absolute;
-    top: 20px; right: 25%;
+    top: 20px; right: 35%;
     
 }
 
 .portfolio_pos {
     position: absolute;
-    top: 20px; right: 15%;
+    top: 20px; right: 25%;
     
 }
 
+.hire_pos {
+    position: absolute;
+    top: 20px; right: 15%;
+    
+}
