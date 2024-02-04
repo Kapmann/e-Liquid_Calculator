@@ -1,0 +1,33 @@
+print('This is your new e-liquid calculator, please fill out the form!')
+
+# INPUT FIELDS
+
+b2 = int(input('What is the target qty of e-liquid (ml) \n'))
+b3 = 20
+print(f'The strength of the booster is {b3} mg \n')
+b4 = int(input('What is the booster PG (%)? \n'))
+b5 = int(input('What is the booster VG (%)? \n'))
+b6 = int(input('What is the desired amount of flavor (%)? \n'))
+b7 = int(input('What is the desired e-liquid nicotine strength (mg)? \n'))
+b8 = int(input('What is the desired VG % in e-liquid? \n'))
+b9 = int(input('What is the desired PG % in e-liquid\n'))
+
+# FORMULAS
+
+print('RECIPE:')
+result1 = b7 / b3 * b2 #b12
+result2 = (b6 / 100) * b2 #b13
+result3 = ((b8 / 100) * b2) - (result1 * (b5 / 100))
+result4 = ((b9 / 100) * b2) - (result1 * (b4 / 100)) - result2
+
+# RESULTS
+print(f'Add nicotine (ml) {result1: .2f}')
+print(f'Add flavor (ml) {result2: .2f}')
+print(f'Add VG (ml) {result3: .2f}')
+print(f'Add PG (ml){result4: .2f}')
+result5 = (result1 * (b4 / 100) + result2) / b2 * 100
+result6 = 100 - result5
+result7 = result3 + result4
+print(f'If PG will not be added, the amount of PG is {result5: .2f} (%)')
+print(f'and VG (%) {result6: .2f}')
+print(f'The total amount of needed diluent is {result7: .2f} ml')

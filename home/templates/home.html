@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block title %}Home{% endblock%} 
+{% block body %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<div class="background-image">
+    <div class="badge text-wrap headline_text" style="color: rgb(61, 31, 143); background-color: aliceblue; 
+    width:fit-content; font-size: x-large; font-family:Arial, Helvetica, sans-serif; text-align: center;">
+        CHOOSE YOUR E-LIQUID CALCULATOR
+    </div>
+    <div class="badge text-wrap main_text" style="color: rgb(151, 7, 127); background-color: aliceblue; width: fit-content; font-size: x-large; font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; text-align: center;">
+    Create your own custom e-liquid with your preferred PG/VG ratio using a DIY calculator.<br> Just enter the nicotine strength, 
+        flavor percentage, and the amount you want to make.<br> Get started now and have complete control over your e-liquid.
+    </div>
+    <div class="secondary_text" style="color: rgb(33, 7, 151); font-size: large; font-family: Arial, Helvetica, sans-serif; text-align: left;">
+        If you have 100% pure PG and VG available<br> and you wish to make e-liquid<br>
+        that has custom levels of PG/VG, click on<br> the blue CUSTOM PG / VG calculator button below!
+    </div>
+    <div class="right_text" style="color: rgb(151, 7, 127); font-size: large; font-family: Arial, Helvetica, sans-serif; text-align: right">
+        If you have fixed PG / VG ratio diluent - 70/30, 50/50 etc<br> and you wish to see the levels<br>
+        of total PG / VG in your e-liquid, <br>click the red FIXED PG / VG calculator button below!
+    </div>
+    <div class="custom_button">
+    <a
+        href="#"
+        class="btn btn-primary mt-auto"
+        role="button">CUSTOM PG / VG<br>CALCULATOR</a>
+    </div>
+    <div class="fixed_button">
+    <a
+        href="#"
+        class="btn btn-danger mt-auto"
+        role="button">FIXED PG / VG<br>CALCULATOR</a>
+    </div>
+</div>
+
+{% endblock body %}

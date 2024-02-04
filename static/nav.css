@@ -1,0 +1,25 @@
+
+.navi_height {
+    position: relative;
+    height: 50px;
+    padding-bottom: 50px;
+}
+
+.home_pos {
+    position: absolute;
+    top: 20px; left: 15%;
+    
+}
+
+.about_pos {
+    position: absolute;
+    top: 20px; right: 25%;
+    
+}
+
+.portfolio_pos {
+    position: absolute;
+    top: 20px; right: 15%;
+    
+}
+
